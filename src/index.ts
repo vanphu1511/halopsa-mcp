@@ -41,6 +41,7 @@ import {
 } from "./utils/client.js";
 import { setServerRef } from "./utils/server-ref.js";
 import { registerPromptHandlers } from "./prompts.js";
+import { HaloAPI } from 'halo-api';
 
 /**
  * Navigation tool - always available
