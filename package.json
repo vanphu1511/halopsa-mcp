@@ -1,7 +1,7 @@
 {
   "name": "halopsa-mcp",
   "version": "1.2.2",
-  "description": "HaloPSA MCP server with decision tree architecture for Claude",
+  "description": "HaloPSA MCP server for Ginko Team",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,34 +17,17 @@
     "start": "node dist/index.js",
     "lint": "eslint src --ext .ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "pack:mcpb": "node scripts/pack-mcpb.js",
-    "validate:mcpb": "mcpb validate manifest.json"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wyre-technology/halopsa-mcp.git"
+    "url": "git+https://github.com/vanphu1511/halopsa-mcp.git"
   },
-  "keywords": [
-    "mcp",
-    "claude",
-    "halopsa",
-    "halo",
-    "psa",
-    "msp",
-    "itsm",
-    "decision-tree"
-  ],
-  "author": "Wyre Technology",
+  "author": "Van Phu (Fork)",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/wyre-technology/halopsa-mcp/issues"
-  },
-  "homepage": "https://github.com/wyre-technology/halopsa-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
-    "@wyre-technology/node-halopsa": "^1.0.0"
+    "haloitsmsdk": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
@@ -52,11 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "typescript": "^5.3.3",
-    "vitest": "^1.2.0",
-    "semantic-release": "^25.0.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.0"
+    "vitest": "^1.2.0"
   },
   "engines": {
     "node": ">=20.0.0"
